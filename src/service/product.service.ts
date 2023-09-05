@@ -4,7 +4,7 @@ import ProductModel, {
   ProductInput,
 } from "../models/product.model";
 import { databaseResponseTimeHistogram } from "../utils/metrics";
-
+ 
 export async function createProduct(input: ProductInput) {
   const metricsLabels = {
     operation: "createProduct",

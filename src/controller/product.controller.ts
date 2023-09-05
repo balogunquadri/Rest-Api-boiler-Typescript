@@ -82,5 +82,5 @@ export async function deleteProductHandler(
 
   await deleteProduct({ productId });
 
-    return res.sendStatus(200);
+  return res.sendStatus(200);
 }

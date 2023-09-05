@@ -1,11 +1,8 @@
-import pino from 'pino'
-import pretty from 'pino-pretty'
+import logger from "pino";
 import dayjs from "dayjs";
 
-const log = pino({
-  transport: {
-    target: 'pino-pretty',
-  },
+const log = logger({
+  prettyPrint: true,
   base: {
     pid: false,
   },

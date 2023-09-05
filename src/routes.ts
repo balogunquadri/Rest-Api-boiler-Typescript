@@ -114,7 +114,7 @@ function routes(app: Express) {
   );
 
   app.delete(
-    "/api/products/:productId ",
+    "/api/products/:productId",
     [requireUser, validateResource(deleteProductSchema)],
     deleteProductHandler
   );

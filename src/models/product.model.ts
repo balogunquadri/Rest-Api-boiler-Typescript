@@ -13,6 +13,7 @@ export interface ProductInput {
 }
 
 export interface ProductDocument extends ProductInput, mongoose.Document {
+  productId: string;
   createdAt: Date;
   updatedAt: Date;
 }
