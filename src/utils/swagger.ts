@@ -8,7 +8,7 @@ const options: swaggerJsdoc.Options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "REST API Docs",
+      title: "REST API BoilerPlate",
       version,
     },
     components: {

@@ -63,6 +63,33 @@ function routes(app: Express) {
    */
   app.post("/api/users", validateResource(createUserSchema), createUserHandler);
 
+
+
+  /**
+   * @openapi
+   * '/api/sessions':
+   *  post:
+   *     tags:
+   *     - Session
+   *     summary: Create a session
+   *     requestBody:
+   *      required: true
+   *      content:
+   *        application/json:
+   *           schema:
+   *              $ref: '#/components/schema/Session'
+   *     responses:
+   *      200:
+   *        description: Success
+   *        content:
+   *          application/json:
+   *            schema:
+   *              $ref: '#/components/schema/Session'
+   *      409:
+   *        description: Conflict
+   *      400:
+   *        description: Bad request
+   */
   app.post(
     "/api/sessions",
     validateResource(createSessionSchema),
